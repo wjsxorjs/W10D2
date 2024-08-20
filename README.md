@@ -55,3 +55,9 @@
 > docker stop $(docker ps -q) : 모든 컨테이너 정지<br>
 > -> docker rm $(docker ps -a -q) : 모든 컨테이너 삭제<br>
 > -> docker rmi -f $(docker images -q) : 모든 이미지 삭제
+
+## Docker에 이미지 만드는 법
+> docker commit [컨테이너 ID] [docker hub namespace]/[repository name]
+
+## Docker에 repository push하기
+> docker push [컨테이너 이름] : 해당 컨테이너 이름으로 push한다.
