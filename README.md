@@ -37,4 +37,9 @@
 > 2. service tomcat stop : 이미 실행 중인 tomcat 중지
 > 3. (nohup) java -jar *.jar : jar파일 실행
 
-! SPRING_PROFILES_ACTIVE - dev  시스템 환경변수 변경
+# Docker
+> docker run --name [컨테이너명] -d [이미지명] : 이미지를 바탕으로 컨테이너 생성(백그라운드에서)
+> docker ps -a : 모든 컨테이너 목록 확인 ( 정지된 컨테이너 포함 )
+> > 정지는 삭제와 같지않으며 삭제된 컨테이너는 해당 명령어에도 표시되지 않음
+> docker run --name [컨테이너명] -d -p 80:80 [이미지명] : 이미지를 바탕으로 컨테이너 생성(백그라운드에서, 해당 포트번호로)
+> 
